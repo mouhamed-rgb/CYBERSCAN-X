@@ -1,5 +1,5 @@
 name: cyberscan_x
-description: Cyberpunk-style digital safety companion.
+description: Cyberpunk security scanner powered by VirusTotal.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.2.2
+  file_picker: ^8.1.7
 
 dev_dependencies:
   flutter_test:
