@@ -262,7 +262,7 @@ class _CyberHomeState extends State<CyberHome> {
       }
 
       Map<String, dynamic>? analysis;
-      const maxAttempts = 15;
+      const maxAttempts = 5;
 
       for (int attempt = 0; attempt < maxAttempts; attempt++) {
         if (!mounted) return;
