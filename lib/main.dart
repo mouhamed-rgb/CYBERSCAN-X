@@ -272,8 +272,8 @@ class _CyberHomeState extends State<CyberHome> {
               'VirusTotal analysis in progress... (${attempt + 1}/$maxAttempts)';
         });
 
-        await Future.delayed(const Duration(seconds: 3));
-
+        await Future.delayed(const Duration(seconds: 16));
+        
         final uri = Uri.parse(
           '$apiBaseUrl/api/analysis',
         ).replace(queryParameters: {'id': analysisId});
