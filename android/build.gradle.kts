@@ -23,9 +23,12 @@ subprojects {
 subprojects {
     project.evaluationDependsOn(":app")
 
-    plugins.withId("com.android.library") {
-        extensions.configure<LibraryExtension> {
-            compileSdk = 36
+    afterEvaluate {
+        val androidLibrary =
+            extensions.findByType(LibraryExtension::class.java)
+
+        if (androidLibrary != null) {
+            androidLibrary.compileSdk = 36
         }
     }
 }
